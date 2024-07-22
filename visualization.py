@@ -95,7 +95,7 @@ class CreateMoleculeModel:
             rate(60)
 
             for atom in self.atoms:
-                sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.5, color=self.colors_dict[atom[1]])
+                sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.25, color=self.colors_dict[atom[1]])
 
             for edge in self.connectivity:
                 cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05)
