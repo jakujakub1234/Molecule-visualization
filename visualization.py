@@ -1,15 +1,13 @@
 from vpython import *
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
-import random
-import hashlib
 import json
 
 class CreateMoleculeModel:
     def __init__(self):
         self.covalent_radii = {}
         self.atomic_masses = {}
-        self.colors_dict = {}
+        self.cpk_hex_colors = {}
 
         self.atoms = []
         self.connectivity = []
@@ -17,24 +15,10 @@ class CreateMoleculeModel:
         self.get_elements_data_from_json()
 
         Tk().withdraw()
-        xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*.xyz")])
+        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*.xyz")])
 
-        self.get_atoms_positions_from_file(xyz_filename)
+        self.get_atoms_positions_from_file(self.xyz_filename)
         self.get_connectivity()
-   
-    def random_color(self, string, int): 
-        h = hash( string + str(int) )
-        
-        if h < 0:
-            h = h * -1
-        
-        random.seed(h)
-        
-        output = random.random()
-        output = round(output, 6)
-        
-        return output
-
 
     def get_elements_data_from_json(self):
         with open('elements_data.json', 'r') as json_file:
@@ -44,8 +28,11 @@ class CreateMoleculeModel:
             symbol = elem['symbol']
             mass = elem['atomic_mass']
             covalent_radius = elem['covalent_radius']
+            cpk_hex = elem['cpk_hex']
+            cpk_hex = tuple(int(cpk_hex[i:i+2], 16) / 255.0 for i in (0, 2, 4))
 
             self.atomic_masses[symbol] = mass
+            self.cpk_hex_colors[symbol] = vector(cpk_hex[0], cpk_hex[1], cpk_hex[2])
 
             if covalent_radius != "N/A":
                 self.covalent_radii[symbol] = float(covalent_radius) * 1.08
@@ -58,15 +45,12 @@ class CreateMoleculeModel:
 
                     atom_symbol = elems[-4]
 
-                    if atom_symbol not in self.colors_dict:
-                        color = vector(self.random_color(atom_symbol, 0), self.random_color(atom_symbol, 1), self.random_color(atom_symbol, 2))
-                        self.colors_dict[atom_symbol] = color
-                    
                     x_coord = float(elems[-3])
                     y_coord = float(elems[-2])
                     z_coord = float(elems[-1])
 
                     self.atoms.append([vector(x_coord, y_coord, z_coord), atom_symbol])
+
 
     def get_connectivity(self):
         for i in range(len(self.atoms)):
@@ -82,23 +66,29 @@ class CreateMoleculeModel:
                 dist = mag(atom_1[0] - atom_2[0])
 
                 if dist <= self.covalent_radii[atom_1[1]] + self.covalent_radii[atom_2[1]]:
-                    self.connectivity.append([atom_1[0], atom_2[0] - atom_1[0], dist])
+                    self.connectivity.append([atom_1[0], atom_2[0] - atom_1[0], dist / 2.0, self.cpk_hex_colors[atom_1[1]]])
+
+                    self.connectivity.append([atom_2[0], atom_1[0] - atom_2[0], dist / 2.0, self.cpk_hex_colors[atom_2[1]]])        
 
     def draw_molecule(self):
-        scene.caption= '''
+        canvas(title=self.xyz_filename, width=1000, height=600, caption= '''
             To rotate "camera", drag with right button or Ctrl-drag.
             To zoom, drag with middle button or Alt/Option depressed, or use scroll wheel.
             To pan left/right and up/down, Shift-drag.
-        '''
+        ''')
 
         while True:
             rate(60)
 
             for atom in self.atoms:
-                sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.25, color=self.colors_dict[atom[1]])
+                sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.25, color=self.cpk_hex_colors[atom[1]])
 
             for edge in self.connectivity:
-                cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05)
+                cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05, color = edge[3])
+
+            # drawing vector:
+            
+            # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
 
 visualizator = CreateMoleculeModel()
 

@@ -3,597 +3,716 @@
         {
             "symbol": "H",
             "atomic_mass": 1.008,
-            "covalent_radius": 0.31
+            "covalent_radius": 0.31,
+            "cpk_hex": "ffffff"
         },
         {
             "symbol": "He",
             "atomic_mass": 4.0026022,
-            "covalent_radius": 0.283
+            "covalent_radius": 0.283,
+            "cpk_hex": "d9ffff"
         },
         {
             "symbol": "Li",
             "atomic_mass": 6.94,
-            "covalent_radius": 1.28
+            "covalent_radius": 1.28,
+            "cpk_hex": "cc80ff"
         },
         {
             "symbol": "Be",
             "atomic_mass": 9.01218315,
-            "covalent_radius": 0.96
+            "covalent_radius": 0.96,
+            "cpk_hex": "c2ff00"
         },
         {
             "symbol": "B",
             "atomic_mass": 10.81,
-            "covalent_radius": 0.84
+            "covalent_radius": 0.84,
+            "cpk_hex": "ffb5b5"
         },
         {
             "symbol": "C",
             "atomic_mass": 12.011,
-            "covalent_radius": 0.76
+            "covalent_radius": 0.76,
+            "cpk_hex": "909090"
         },
         {
             "symbol": "N",
             "atomic_mass": 14.007,
-            "covalent_radius": 0.71
+            "covalent_radius": 0.71,
+            "cpk_hex": "3050f8"
         },
         {
             "symbol": "O",
             "atomic_mass": 15.999,
-            "covalent_radius": 0.66
+            "covalent_radius": 0.66,
+            "cpk_hex": "ff0d0d"
         },
         {
             "symbol": "F",
             "atomic_mass": 18.9984031636,
-            "covalent_radius": 0.57
+            "covalent_radius": 0.57,
+            "cpk_hex": "90e050"
         },
         {
             "symbol": "Ne",
             "atomic_mass": 20.17976,
-            "covalent_radius": 0.5811
+            "covalent_radius": 0.5811,
+            "cpk_hex": "b3e3f5"
         },
         {
             "symbol": "Na",
             "atomic_mass": 22.989769282,
-            "covalent_radius": 1.66
+            "covalent_radius": 1.66,
+            "cpk_hex": "ab5cf2"
         },
         {
             "symbol": "Mg",
             "atomic_mass": 24.305,
-            "covalent_radius": 1.41
+            "covalent_radius": 1.41,
+            "cpk_hex": "8aff00"
         },
         {
             "symbol": "Al",
             "atomic_mass": 26.98153857,
-            "covalent_radius": 1.21
+            "covalent_radius": 1.21,
+            "cpk_hex": "bfa6a6"
         },
         {
             "symbol": "Si",
             "atomic_mass": 28.085,
-            "covalent_radius": 1.11
+            "covalent_radius": 1.11,
+            "cpk_hex": "f0c8a0"
         },
         {
             "symbol": "P",
             "atomic_mass": 30.9737619985,
-            "covalent_radius": 1.07
+            "covalent_radius": 1.07,
+            "cpk_hex": "ff8000"
         },
         {
             "symbol": "S",
             "atomic_mass": 32.06,
-            "covalent_radius": 1.05
+            "covalent_radius": 1.05,
+            "cpk_hex": "ffff30"
         },
         {
             "symbol": "Cl",
             "atomic_mass": 35.45,
-            "covalent_radius": 1.02
+            "covalent_radius": 1.02,
+            "cpk_hex": "1ff01f"
         },
         {
             "symbol": "Ar",
             "atomic_mass": 39.9481,
-            "covalent_radius": 1.06
+            "covalent_radius": 1.06,
+            "cpk_hex": "80d1e3"
         },
         {
             "symbol": "K",
             "atomic_mass": 39.09831,
-            "covalent_radius": 2.03
+            "covalent_radius": 2.03,
+            "cpk_hex": "8f40d4"
         },
         {
             "symbol": "Ca",
             "atomic_mass": 40.0784,
-            "covalent_radius": 1.76
+            "covalent_radius": 1.76,
+            "cpk_hex": "3dff00"
         },
         {
             "symbol": "Sc",
             "atomic_mass": 44.9559085,
-            "covalent_radius": 1.7
+            "covalent_radius": 1.7,
+            "cpk_hex": "e6e6e6"
         },
         {
             "symbol": "Ti",
             "atomic_mass": 47.8671,
-            "covalent_radius": 1.6
+            "covalent_radius": 1.6,
+            "cpk_hex": "bfc2c7"
         },
         {
             "symbol": "V",
             "atomic_mass": 50.94151,
-            "covalent_radius": 1.53
+            "covalent_radius": 1.53,
+            "cpk_hex": "a6a6ab"
         },
         {
             "symbol": "Cr",
             "atomic_mass": 51.99616,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "8a99c7"
         },
         {
             "symbol": "Mn",
             "atomic_mass": 54.9380443,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "9c7ac7"
         },
         {
             "symbol": "Fe",
             "atomic_mass": 55.8452,
-            "covalent_radius": 1.32
+            "covalent_radius": 1.32,
+            "cpk_hex": "e06633"
         },
         {
             "symbol": "Co",
             "atomic_mass": 58.9331944,
-            "covalent_radius": 1.26
+            "covalent_radius": 1.26,
+            "cpk_hex": "f090a0"
         },
         {
             "symbol": "Ni",
             "atomic_mass": 58.69344,
-            "covalent_radius": 1.24
+            "covalent_radius": 1.24,
+            "cpk_hex": "50d050"
         },
         {
             "symbol": "Cu",
             "atomic_mass": 63.5463,
-            "covalent_radius": 1.32
+            "covalent_radius": 1.32,
+            "cpk_hex": "c88033"
         },
         {
             "symbol": "Zn",
             "atomic_mass": 65.382,
-            "covalent_radius": 1.22
+            "covalent_radius": 1.22,
+            "cpk_hex": "7d80b0"
         },
         {
             "symbol": "Ga",
             "atomic_mass": 69.7231,
-            "covalent_radius": 1.22
+            "covalent_radius": 1.22,
+            "cpk_hex": "c28f8f"
         },
         {
             "symbol": "Ge",
             "atomic_mass": 72.6308,
-            "covalent_radius": 1.2
+            "covalent_radius": 1.2,
+            "cpk_hex": "668f8f"
         },
         {
             "symbol": "As",
             "atomic_mass": 74.9215956,
-            "covalent_radius": 1.19
+            "covalent_radius": 1.19,
+            "cpk_hex": "bd80e3"
         },
         {
             "symbol": "Se",
             "atomic_mass": 78.9718,
-            "covalent_radius": 1.2
+            "covalent_radius": 1.2,
+            "cpk_hex": "ffa100"
         },
         {
             "symbol": "Br",
             "atomic_mass": 79.904,
-            "covalent_radius": 1.2
+            "covalent_radius": 1.2,
+            "cpk_hex": "a62929"
         },
         {
             "symbol": "Kr",
             "atomic_mass": 83.7982,
-            "covalent_radius": 1.16
+            "covalent_radius": 1.16,
+            "cpk_hex": "5cb8d1"
         },
         {
             "symbol": "Rb",
             "atomic_mass": 85.46783,
-            "covalent_radius": 2.2
+            "covalent_radius": 2.2,
+            "cpk_hex": "702eb0"
         },
         {
             "symbol": "Sr",
             "atomic_mass": 87.621,
-            "covalent_radius": 1.95
+            "covalent_radius": 1.95,
+            "cpk_hex": "00ff00"
         },
         {
             "symbol": "Y",
             "atomic_mass": 88.905842,
-            "covalent_radius": 1.9
+            "covalent_radius": 1.9,
+            "cpk_hex": "94ffff"
         },
         {
             "symbol": "Zr",
             "atomic_mass": 91.2242,
-            "covalent_radius": 1.75
+            "covalent_radius": 1.75,
+            "cpk_hex": "94e0e0"
         },
         {
             "symbol": "Nb",
             "atomic_mass": 92.906372,
-            "covalent_radius": 1.64
+            "covalent_radius": 1.64,
+            "cpk_hex": "73c2c9"
         },
         {
             "symbol": "Mo",
             "atomic_mass": 95.951,
-            "covalent_radius": 1.54
+            "covalent_radius": 1.54,
+            "cpk_hex": "54b5b5"
         },
         {
             "symbol": "Tc",
             "atomic_mass": 98,
-            "covalent_radius": 1.47
+            "covalent_radius": 1.47,
+            "cpk_hex": "3b9e9e"
         },
         {
             "symbol": "Ru",
             "atomic_mass": 101.072,
-            "covalent_radius": 1.46
+            "covalent_radius": 1.46,
+            "cpk_hex": "248f8f"
         },
         {
             "symbol": "Rh",
             "atomic_mass": 102.905502,
-            "covalent_radius": 1.42
+            "covalent_radius": 1.42,
+            "cpk_hex": "0a7d8c"
         },
         {
             "symbol": "Pd",
             "atomic_mass": 106.421,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "006985"
         },
         {
             "symbol": "Ag",
             "atomic_mass": 107.86822,
-            "covalent_radius": 1.45
+            "covalent_radius": 1.45,
+            "cpk_hex": "c0c0c0"
         },
         {
             "symbol": "Cd",
             "atomic_mass": 112.4144,
-            "covalent_radius": 1.44
+            "covalent_radius": 1.44,
+            "cpk_hex": "ffd98f"
         },
         {
             "symbol": "In",
             "atomic_mass": 114.8181,
-            "covalent_radius": 1.42
+            "covalent_radius": 1.42,
+            "cpk_hex": "a67573"
         },
         {
             "symbol": "Sn",
             "atomic_mass": 118.7107,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "668080"
         },
         {
             "symbol": "Sb",
             "atomic_mass": 121.7601,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "9e63b5"
         },
         {
             "symbol": "Te",
             "atomic_mass": 127.603,
-            "covalent_radius": 1.38
+            "covalent_radius": 1.38,
+            "cpk_hex": "d47a00"
         },
         {
             "symbol": "I",
             "atomic_mass": 126.904473,
-            "covalent_radius": 1.39
+            "covalent_radius": 1.39,
+            "cpk_hex": "940094"
         },
         {
             "symbol": "Xe",
             "atomic_mass": 131.2936,
-            "covalent_radius": 1.4
+            "covalent_radius": 1.4,
+            "cpk_hex": "429eb0"
         },
         {
             "symbol": "Cs",
             "atomic_mass": 132.905451966,
-            "covalent_radius": 2.44
+            "covalent_radius": 2.44,
+            "cpk_hex": "57178f"
         },
         {
             "symbol": "Ba",
             "atomic_mass": 137.3277,
-            "covalent_radius": 2.15
+            "covalent_radius": 2.15,
+            "cpk_hex": "00c900"
         },
         {
             "symbol": "La",
             "atomic_mass": 138.905477,
-            "covalent_radius": 2.07
+            "covalent_radius": 2.07,
+            "cpk_hex": "70d4ff"
         },
         {
             "symbol": "Ce",
             "atomic_mass": 140.1161,
-            "covalent_radius": 2.04
+            "covalent_radius": 2.04,
+            "cpk_hex": "ffffc7"
         },
         {
             "symbol": "Pr",
             "atomic_mass": 140.907662,
-            "covalent_radius": 2.03
+            "covalent_radius": 2.03,
+            "cpk_hex": "d9ffc7"
         },
         {
             "symbol": "Nd",
             "atomic_mass": 144.2423,
-            "covalent_radius": 2.01
+            "covalent_radius": 2.01,
+            "cpk_hex": "c7ffc7"
         },
         {
             "symbol": "Pm",
             "atomic_mass": 145,
-            "covalent_radius": 1.9962
+            "covalent_radius": 1.9962,
+            "cpk_hex": "a3ffc7"
         },
         {
             "symbol": "Sm",
             "atomic_mass": 150.362,
-            "covalent_radius": 1.98
+            "covalent_radius": 1.98,
+            "cpk_hex": "8fffc7"
         },
         {
             "symbol": "Eu",
             "atomic_mass": 151.9641,
-            "covalent_radius": 1.98
+            "covalent_radius": 1.98,
+            "cpk_hex": "61ffc7"
         },
         {
             "symbol": "Gd",
             "atomic_mass": 157.253,
-            "covalent_radius": 1.96
+            "covalent_radius": 1.96,
+            "cpk_hex": "45ffc7"
         },
         {
             "symbol": "Tb",
             "atomic_mass": 158.925352,
-            "covalent_radius": 1.94
+            "covalent_radius": 1.94,
+            "cpk_hex": "30ffc7"
         },
         {
             "symbol": "Dy",
             "atomic_mass": 162.5001,
-            "covalent_radius": 1.92
+            "covalent_radius": 1.92,
+            "cpk_hex": "1fffc7"
         },
         {
             "symbol": "Ho",
             "atomic_mass": 164.930332,
-            "covalent_radius": 1.92
+            "covalent_radius": 1.92,
+            "cpk_hex": "00ff9c"
         },
         {
             "symbol": "Er",
             "atomic_mass": 167.2593,
-            "covalent_radius": 1.89
+            "covalent_radius": 1.89,
+            "cpk_hex": "00e675"
         },
         {
             "symbol": "Tm",
             "atomic_mass": 168.934222,
-            "covalent_radius": 1.9
+            "covalent_radius": 1.9,
+            "cpk_hex": "00d452"
         },
         {
             "symbol": "Yb",
             "atomic_mass": 173.0451,
-            "covalent_radius": 1.87
+            "covalent_radius": 1.87,
+            "cpk_hex": "00bf38"
         },
         {
             "symbol": "Lu",
             "atomic_mass": 174.96681,
-            "covalent_radius": 1.87
+            "covalent_radius": 1.87,
+            "cpk_hex": "00ab24"
         },
         {
             "symbol": "Hf",
             "atomic_mass": 178.492,
-            "covalent_radius": 1.75
+            "covalent_radius": 1.75,
+            "cpk_hex": "4dc2ff"
         },
         {
             "symbol": "Ta",
             "atomic_mass": 180.947882,
-            "covalent_radius": 1.7
+            "covalent_radius": 1.7,
+            "cpk_hex": "4da6ff"
         },
         {
             "symbol": "W",
             "atomic_mass": 183.841,
-            "covalent_radius": 1.62
+            "covalent_radius": 1.62,
+            "cpk_hex": "2194d6"
         },
         {
             "symbol": "Re",
             "atomic_mass": 186.2071,
-            "covalent_radius": 1.51
+            "covalent_radius": 1.51,
+            "cpk_hex": "267dab"
         },
         {
             "symbol": "Os",
             "atomic_mass": 190.233,
-            "covalent_radius": 1.44
+            "covalent_radius": 1.44,
+            "cpk_hex": "266696"
         },
         {
             "symbol": "Ir",
             "atomic_mass": 192.2173,
-            "covalent_radius": 1.41
+            "covalent_radius": 1.41,
+            "cpk_hex": "175487"
         },
         {
             "symbol": "Pt",
             "atomic_mass": 195.0849,
-            "covalent_radius": 1.36
+            "covalent_radius": 1.36,
+            "cpk_hex": "d0d0e0"
         },
         {
             "symbol": "Au",
             "atomic_mass": 196.9665695,
-            "covalent_radius": 1.36
+            "covalent_radius": 1.36,
+            "cpk_hex": "ffd123"
         },
         {
             "symbol": "Hg",
             "atomic_mass": 200.5923,
-            "covalent_radius": 1.32
+            "covalent_radius": 1.32,
+            "cpk_hex": "b8b8d0"
         },
         {
             "symbol": "Tl",
             "atomic_mass": 204.38,
-            "covalent_radius": 1.45
+            "covalent_radius": 1.45,
+            "cpk_hex": "a6544d"
         },
         {
             "symbol": "Pb",
             "atomic_mass": 207.21,
-            "covalent_radius": 1.46
+            "covalent_radius": 1.46,
+            "cpk_hex": "575961"
         },
         {
             "symbol": "Bi",
             "atomic_mass": 208.980401,
-            "covalent_radius": 1.48
+            "covalent_radius": 1.48,
+            "cpk_hex": "9e4fb5"
         },
         {
             "symbol": "Po",
             "atomic_mass": 209,
-            "covalent_radius": 1.4
+            "covalent_radius": 1.4,
+            "cpk_hex": "ab5c00"
         },
         {
             "symbol": "At",
             "atomic_mass": 210,
-            "covalent_radius": 1.5086
+            "covalent_radius": 1.5086,
+            "cpk_hex": "754f45"
         },
         {
             "symbol": "Rn",
             "atomic_mass": 222,
-            "covalent_radius": 1.5087
+            "covalent_radius": 1.5087,
+            "cpk_hex": "428296"
         },
         {
             "symbol": "Fr",
             "atomic_mass": 223,
-            "covalent_radius": 2.6088
+            "covalent_radius": 2.6088,
+            "cpk_hex": "420066"
         },
         {
             "symbol": "Ra",
             "atomic_mass": 226,
-            "covalent_radius": 2.21
+            "covalent_radius": 2.21,
+            "cpk_hex": "007d00"
         },
         {
             "symbol": "Ac",
             "atomic_mass": 227,
-            "covalent_radius": 2.15
+            "covalent_radius": 2.15,
+            "cpk_hex": "70abfa"
         },
         {
             "symbol": "Th",
             "atomic_mass": 232.03774,
-            "covalent_radius": 2.06
+            "covalent_radius": 2.06,
+            "cpk_hex": "00baff"
         },
         {
             "symbol": "Pa",
             "atomic_mass": 231.035882,
-            "covalent_radius": 2.0
+            "covalent_radius": 2.0,
+            "cpk_hex": "00a1ff"
         },
         {
             "symbol": "U",
             "atomic_mass": 238.028913,
-            "covalent_radius": 1.96
+            "covalent_radius": 1.96,
+            "cpk_hex": "008fff"
         },
         {
             "symbol": "Np",
             "atomic_mass": 237,
-            "covalent_radius": 1.9
+            "covalent_radius": 1.9,
+            "cpk_hex": "0080ff"
         },
         {
             "symbol": "Pu",
             "atomic_mass": 244,
-            "covalent_radius": 1.87
+            "covalent_radius": 1.87,
+            "cpk_hex": "006bff"
         },
         {
             "symbol": "Am",
             "atomic_mass": 243,
-            "covalent_radius": 1.8
+            "covalent_radius": 1.8,
+            "cpk_hex": "545cf2"
         },
         {
             "symbol": "Cm",
             "atomic_mass": 247,
-            "covalent_radius": 1.69
+            "covalent_radius": 1.69,
+            "cpk_hex": "785ce3"
         },
         {
             "symbol": "Bk",
             "atomic_mass": 247,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "8a4fe3"
         },
         {
             "symbol": "Cf",
             "atomic_mass": 251,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "a136d4"
         },
         {
             "symbol": "Es",
             "atomic_mass": 252,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "b31fd4"
         },
         {
             "symbol": "Fm",
             "atomic_mass": 257,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "b31fba"
         },
         {
             "symbol": "Md",
             "atomic_mass": 258,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "b30da6"
         },
         {
             "symbol": "No",
             "atomic_mass": 259,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "bd0d87"
         },
         {
             "symbol": "Lr",
             "atomic_mass": 266,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "c70066"
         },
         {
             "symbol": "Rf",
             "atomic_mass": 267,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "cc0059"
         },
         {
             "symbol": "Db",
             "atomic_mass": 268,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "d1004f"
         },
         {
             "symbol": "Sg",
             "atomic_mass": 269,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "d90045"
         },
         {
             "symbol": "Bh",
             "atomic_mass": 270,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "e00038"
         },
         {
             "symbol": "Hs",
             "atomic_mass": 269,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "e6002e"
         },
         {
             "symbol": "Mt",
             "atomic_mass": 278,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "eb0026"
         },
         {
             "symbol": "Ds",
             "atomic_mass": 281,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Rg",
             "atomic_mass": 282,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Cn",
             "atomic_mass": 285,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Nh",
             "atomic_mass": 286,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Fl",
             "atomic_mass": 289,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Mc",
             "atomic_mass": 289,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Lv",
             "atomic_mass": 293,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Ts",
             "atomic_mass": 294,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Og",
             "atomic_mass": 294,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         },
         {
             "symbol": "Uue",
             "atomic_mass": 315,
-            "covalent_radius": "N/A"
+            "covalent_radius": "N/A",
+            "cpk_hex": "000000"
         }
     ]
 }
