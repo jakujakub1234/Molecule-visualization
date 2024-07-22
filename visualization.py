@@ -3,16 +3,18 @@ from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 import random
 import hashlib
+import json
 
 class CreateMoleculeModel:
     def __init__(self):
         self.covalent_radii = {}
+        self.atomic_masses = {}
         self.colors_dict = {}
 
         self.atoms = []
         self.connectivity = []
 
-        self.get_covalent_radii_dict()
+        self.get_elements_data_from_json()
 
         Tk().withdraw()
         xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*.xyz")])
@@ -34,12 +36,19 @@ class CreateMoleculeModel:
         return output
 
 
-    def get_covalent_radii_dict(self):
-        with open("covalent_radii_data.txt") as file:
-            for line in file:
-                if len(line.split()) == 2:
-                    symbol, radius = line.split()
-                    self.covalent_radii[symbol] = float(radius)
+    def get_elements_data_from_json(self):
+        with open('elements_data.json', 'r') as json_file:
+            json_object = json.load(json_file)
+        
+        for elem in json_object['elements']:
+            symbol = elem['symbol']
+            mass = elem['atomic_mass']
+            covalent_radius = elem['covalent_radius']
+
+            self.atomic_masses[symbol] = mass
+
+            if covalent_radius != "N/A":
+                self.covalent_radii[symbol] = float(covalent_radius) * 1.08
 
     def get_atoms_positions_from_file(self, xyz_filename):
         with open(xyz_filename) as file:
@@ -49,9 +58,7 @@ class CreateMoleculeModel:
 
                     atom_symbol = elems[-4]
 
-                    if atom_symbol in self.colors_dict:
-                        color = self.colors_dict[atom_symbol]
-                    else:
+                    if atom_symbol not in self.colors_dict:
                         color = vector(self.random_color(atom_symbol, 0), self.random_color(atom_symbol, 1), self.random_color(atom_symbol, 2))
                         self.colors_dict[atom_symbol] = color
                     
@@ -59,7 +66,7 @@ class CreateMoleculeModel:
                     y_coord = float(elems[-2])
                     z_coord = float(elems[-1])
 
-                    self.atoms.append([vector(x_coord, y_coord, z_coord), color, atom_symbol])
+                    self.atoms.append([vector(x_coord, y_coord, z_coord), atom_symbol])
 
     def get_connectivity(self):
         for i in range(len(self.atoms)):
@@ -67,14 +74,14 @@ class CreateMoleculeModel:
                 atom_1 = self.atoms[i]
                 atom_2 = self.atoms[j]
 
-                if atom_1[2] not in self.covalent_radii:
-                    raise Exception("Atom " + atom_1[2] + " not found in covalent_radii_data.txt") 
-                if atom_2[2] not in self.covalent_radii:
-                    raise Exception("Atom " + atom_2[2] + " not found in covalent_radii_data.txt") 
+                if atom_1[1] not in self.covalent_radii:
+                    raise Exception("Covalent radius of atom " + atom_1[1] + " not found in elements_data.json") 
+                if atom_2[1] not in self.covalent_radii:
+                    raise Exception("Covalent radius of atom " + atom_2[1] + " not found in elements_data.json") 
 
                 dist = mag(atom_1[0] - atom_2[0])
 
-                if dist - 0.2 <= self.covalent_radii[atom_1[2]] + self.covalent_radii[atom_2[2]]:
+                if dist <= self.covalent_radii[atom_1[1]] + self.covalent_radii[atom_2[1]]:
                     self.connectivity.append([atom_1[0], atom_2[0] - atom_1[0], dist])
 
     def draw_molecule(self):
@@ -88,7 +95,7 @@ class CreateMoleculeModel:
             rate(60)
 
             for atom in self.atoms:
-                sphere(pos=atom[0], radius=0.1, color=atom[1])
+                sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.5, color=self.colors_dict[atom[1]])
 
             for edge in self.connectivity:
                 cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05)
