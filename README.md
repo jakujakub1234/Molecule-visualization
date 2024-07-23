@@ -1,3 +1,4 @@
-![image](https://github.com/user-attachments/assets/7e2fbcf2-1925-4e0b-a3bc-f411e9f7a91c)
+![image](https://github.com/user-attachments/assets/b2347e49-3f74-40da-8d71-e0c90311dbf8)
 
-A Python script for visualizing chemical molecules stored in the .xyz format (written using the vpython library)
+A Python script for visualizing chemical molecules stored in the .xyz format (written using the VPython library).
+Connectivity between atoms is calculated using covalent radii (increased by 8%), and the colors of the atoms and their bonds are based on CPK colors.
