@@ -15,7 +15,7 @@ class CreateMoleculeModel:
         self.get_elements_data_from_json()
 
         Tk().withdraw()
-        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*.xyz")])
+        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*xyz")])
 
         self.get_atoms_positions_from_file(self.xyz_filename)
         self.get_connectivity()
@@ -77,19 +77,16 @@ class CreateMoleculeModel:
             To pan left/right and up/down, Shift-drag.
         ''')
 
-        while True:
-            rate(60)
-
-            for atom in self.atoms:
+        for atom in self.atoms:
                 sphere(pos=atom[0], radius=0.1 * self.atomic_masses[atom[1]] ** 0.25, color=self.cpk_hex_colors[atom[1]])
 
-            for edge in self.connectivity:
+        for edge in self.connectivity:
                 cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05, color = edge[3])
 
-            # drawing vector:
-            
-            # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
+        # drawing vector:            
+        # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
 
+          
 visualizator = CreateMoleculeModel()
 
 visualizator.draw_molecule()
