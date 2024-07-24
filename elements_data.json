@@ -1,6 +1,12 @@
 {
     "elements": [
         {
+            "symbol": "Q",
+            "atomic_mass": 1.0,
+            "covalent_radius": -9999.0,
+            "cpk_hex": "660000"
+        },
+        {
             "symbol": "H",
             "atomic_mass": 1.008,
             "covalent_radius": 0.31,
