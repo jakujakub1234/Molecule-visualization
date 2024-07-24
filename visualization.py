@@ -10,12 +10,13 @@ class CreateMoleculeModel:
         self.cpk_hex_colors = {}
 
         self.atoms = []
+        self.
         self.connectivity = []
 
         self.get_elements_data_from_json()
 
         Tk().withdraw()
-        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*xyz")])
+        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files")])
 
         self.get_atoms_positions_from_file(self.xyz_filename)
         self.get_connectivity()
@@ -82,6 +83,8 @@ class CreateMoleculeModel:
 
         for edge in self.connectivity:
                 cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05, color = edge[3])
+
+        print(len(self.connectivity))
 
         # drawing vector:            
         # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
