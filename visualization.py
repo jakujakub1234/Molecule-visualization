@@ -10,13 +10,12 @@ class CreateMoleculeModel:
         self.cpk_hex_colors = {}
 
         self.atoms = []
-        self.
         self.connectivity = []
 
         self.get_elements_data_from_json()
 
         Tk().withdraw()
-        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files")])
+        self.xyz_filename = askopenfilename(title="Select .xyz file with your molecule", filetypes=[("XYZ files", "*")])
 
         self.get_atoms_positions_from_file(self.xyz_filename)
         self.get_connectivity()
