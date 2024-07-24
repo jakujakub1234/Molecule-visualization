@@ -83,8 +83,6 @@ class CreateMoleculeModel:
         for edge in self.connectivity:
                 cylinder(pos=edge[0], axis=edge[1], length=edge[2], radius=0.05, color = edge[3])
 
-        print(len(self.connectivity))
-
         # drawing vector:            
         # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
 
@@ -92,3 +90,6 @@ class CreateMoleculeModel:
 visualizator = CreateMoleculeModel()
 
 visualizator.draw_molecule()
+
+while True:
+    pass
