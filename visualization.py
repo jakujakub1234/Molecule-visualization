@@ -2,6 +2,7 @@ from vpython import *
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 import json
+import psutil
 
 class CreateMoleculeModel:
     def __init__(self):
@@ -86,10 +87,29 @@ class CreateMoleculeModel:
         # drawing vector:            
         # arrow(pos=vector(0, 0, 0), axis=vector(1, 0, 0), color=color.red)
 
-          
 visualizator = CreateMoleculeModel()
 
 visualizator.draw_molecule()
+          
+processes = psutil.process_iter(['pid', 'name'])
+
+python_pids = [proc.info['pid'] for proc in processes if 'python' in proc.info['name']]
+
+print("If the tab with the model did not open in your browser, try using one of the links below as the URL in your browser (without disabling the script):")
+print()
+
+for pid in python_pids:
+    try:
+        proc = psutil.Process(pid)
+        connections = proc.connections(kind='inet')
+        if connections:
+            for conn in connections:
+                laddr = f"{conn.laddr.ip}:{conn.laddr.port}"
+                raddr = f"{conn.raddr.ip}:{conn.raddr.port}" if conn.raddr else "-"
+                print("localhost:" + laddr.split(":")[-1])
+                print()
+    except (psutil.NoSuchProcess, psutil.AccessDenied):
+        pass
 
 while True:
     pass
